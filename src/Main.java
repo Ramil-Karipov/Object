@@ -1,20 +1,27 @@
-
 public class Main {
-    public static Boot createComposition(String name, String author, int year) {
-        Boot book = new Boot();
-        book.name = name;
-        book.author = author;
-        book.year = year;
+    public static Author author(String firstName, String lastName) {
+        Author author = new Author();
+        author.firstName = firstName;
+        author.lastName = lastName;
+        return author;
+    }
+
+    public Book book(String title, int publicationYear) {
+        Book book = new Book();
+        book.title = title;
+        book.publicationYear = publicationYear;
         return book;
     }
 
     public static void main(String[] args) {
-        Boot composition = createComposition("Белая берёза", "Сергей Есенин", 1913);
-        System.out.println("Стихотворение: " + composition.name);
-        System.out.println("Автор : " + composition.author);
-        System.out.println("Год : " + composition.year);
+
+        Author eSeNiN = new Author("Сергей", "Есенин");
+        Book whiteBirch = new Book("Белая берёза", 1914);
     }
 }
+
+
+
 
 
 
