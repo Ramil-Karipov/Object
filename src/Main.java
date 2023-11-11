@@ -4,6 +4,7 @@ public class Main {
 
 
         Author eSeNiN = new Author("Сергей", "Есенин");
+        Author eSeNiN2 = new Author("Сергей", "Есенин");
         Book whiteBirch = new Book("Белая берёза", 1914, eSeNiN);
         System.out.println("Автор: " + eSeNiN.getLastName() + " " + eSeNiN.getFirstName());
         System.out.println("Произведение: " + whiteBirch.getTitle() + " " + whiteBirch.getPublicationYear());
@@ -14,6 +15,19 @@ public class Main {
         System.out.println("Произведение: " + listeUp.getTitle() + " " + listeUp.getPublicationYear());
         listeUp.setPublicationYear(2023);
         System.out.println("Произведение: " + listeUp.getTitle() + " " + listeUp.getPublicationYear());
+        System.out.println();
+        System.out.println(listeUp.toString());
+        System.out.println(whiteBirch.toString());
+        System.out.println();
+        System.out.println(mayaKovSky.equals(eSeNiN));
+        System.out.println(eSeNiN2.equals(eSeNiN));
+        System.out.println();
+
+
+
+
+
+
 
     }
 }
